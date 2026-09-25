@@ -11,4 +11,6 @@ All styling is done only with the CSS property including Grid-Box. For styling t
 **Grid** is used to Specify the position of the Diamond box by rotation & also give specific position of the only image containing in the specific box of the Diamond box by using Clip-path property. These both section is very tricky & most important section.
   
 # GitHub deploy link :
+https://srajjak-3012.github.io/CSS-Assignment02-PHP/
+
 # Backend deploy link :
