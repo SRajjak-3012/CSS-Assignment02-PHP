@@ -1,0 +1,145 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .hero {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #f77737 0%, #ea5436 100%);   /* Gradient background  coloured*/
+      background-attachment: fixed;
+      overflow: hidden;
+      color: #ffffff;
+      padding: 35px 60px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.95);
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #030008;
+    }
+
+    .btn-buy-now {
+      background-color: #212529;
+      color: #fff !important;
+      padding: 10px 24px;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 480px;
+      margin-top: 75px;
+    }
+
+    .hero-content h1 {
+      font-size: 44px;
+      line-height: 1.15;
+      font-weight: 800;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-content p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 30px;
+    }
+
+    .btn-main {
+      display: inline-block;
+      background-color: #212529;
+      color: #ffffff;
+      padding: 15px 34px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* -----GRID with 4 BOXES----- */
+    
+    .diamond-grid-container {
+      position: absolute;
+      top: 50%;
+      right: -520px;  /* Adjust the position on right side */
+      transform: translateY(-50%) rotate(45deg);   /* Outer container rotated 45 degrees */
+      width: 900px;
+      height: 900px;
+      z-index: 2;
+      display: grid;  /* 2x2 based Grid setup */
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 30px; /* Thick White Gap between boxes */
+      background-color: #ffffff; /* Gives white color to grid borders/gaps */
+      border: 30px solid #ffffff; /* Adds an white coloured outer border  */
+    }
+
+    /* Base style for all 4 diamond grid boxes */
+    .grid-box {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #ea5436 0%, #f77737 100%);
+    }
+
+    .grid-box.image-box {
+      background: #fff;
+    }
+
+    .grid-box.image-box .img-inner {    /* Box which Contains the Image */
+      width: 150%;
+      height: 150%;
+      position: absolute;
+      top: -25%;
+      left: -25%;
+      transform: rotate(-45deg);  /* Un-rotate image so the man appears straight */
+      /* background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop');  */
+      background-image: url('https://media.gettyimages.com/id/2229750962/photo/young-man-smiling-and-drinking-water-at-home.jpg?s=612x612&w=0&k=20&c=bFAWyx5msfSU1_rp4K0MHilcS_yHjdAI5YPs_vMD9as='); 
+      background-size: cover;
+      background-position: center 20%;
+    }
+
+    .grid-box.bg-box {    /* Other boxes filled as the background */
+      background: #f1583a; 
+    }
